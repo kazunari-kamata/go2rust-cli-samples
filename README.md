@@ -31,10 +31,12 @@ cargo run --manifest-path ../go2rust-cli/Cargo.toml -- convert \
 ## サンプル
 
 - `samples/basic/hello/main.go`: `package main`、`import "fmt"`、`func main()`、`fmt.Println`
-- `samples/basic/variables/main.go`: `string` と `int` の変数宣言
-- `samples/basic/return_value/main.go`: `return x` と、未対応の通常関数宣言
-- `samples/unsupported/control_flow/main.go`: 未対応の `if`、`for` を TODO 出力として確認するサンプル
-- `samples/unsupported/functions/main.go`: 引数や戻り値を持つ関数が未対応として残ることを確認するサンプル
+- `samples/basic/variables/main.go`: 初期値付き変数宣言、`bool`、`float64`、代入
+- `samples/basic/return_value/main.go`: 戻り値を持つ通常関数と `return x`
+- `samples/basic/functions/main.go`: 引数、戻り値、短変数宣言を持つ通常関数
+- `samples/basic/control_flow/main.go`: 単純な `if` ブロック
+- `samples/unsupported/control_flow/main.go`: 未対応の `for` を TODO 出力として確認するサンプル
+- `samples/unsupported/functions/main.go`: 構造体とメソッドが未対応として残ることを確認するサンプル
 
 ## 検証
 
