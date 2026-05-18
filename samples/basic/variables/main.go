@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var name string
+	var name string = "go2rust"
+	var enabled bool = true
+	var ratio float64 = 1.5
 	var count int = 1
-	fmt.Println(name)
-	fmt.Println(count)
+	count = count + 1
+	fmt.Println(name, enabled, ratio, count)
 }
