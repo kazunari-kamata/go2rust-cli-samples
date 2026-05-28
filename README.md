@@ -34,7 +34,8 @@ cargo run --manifest-path ../go2rust-cli/Cargo.toml -- convert \
 - `samples/basic/variables/main.go`: 初期値付き変数宣言、`bool`、`float64`、代入
 - `samples/basic/return_value/main.go`: 戻り値を持つ通常関数と `return x`
 - `samples/basic/functions/main.go`: 引数、戻り値、短変数宣言を持つ通常関数
-- `samples/basic/control_flow/main.go`: 単純な `if` ブロック
+- `samples/basic/control_flow/main.go`: 単純な `if` / `else if` / `else` ブロックと `fmt.Print`
+- `samples/basic/early_return/main.go`: 値なし `return` を含む早期リターン
 - `samples/unsupported/control_flow/main.go`: 未対応の `for` を TODO 出力として確認するサンプル
 - `samples/unsupported/functions/main.go`: 構造体とメソッドが未対応として残ることを確認するサンプル
 
