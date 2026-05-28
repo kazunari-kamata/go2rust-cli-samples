@@ -3,9 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var count int = 3
-	for count > 0 {
-		fmt.Println("loop")
-		count = count - 1
+	values := []int{1, 2, 3}
+	for _, value := range values {
+		fmt.Println(value)
 	}
 }

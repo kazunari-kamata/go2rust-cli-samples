@@ -14,6 +14,7 @@ func TestSampleFilesExist(t *testing.T) {
 		"../samples/basic/functions/main.go",
 		"../samples/basic/control_flow/main.go",
 		"../samples/basic/early_return/main.go",
+		"../samples/basic/loops/main.go",
 		"../samples/unsupported/control_flow/main.go",
 		"../samples/unsupported/functions/main.go",
 	}
