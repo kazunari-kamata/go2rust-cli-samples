@@ -38,6 +38,7 @@ cargo run --manifest-path ../go2rust-cli/Cargo.toml -- convert \
 - `samples/basic/early_return/main.go`: 値なし `return` を含む早期リターン
 - `samples/basic/loops/main.go`: 条件付き `for` と無限 `for` の変換サンプル
 - `samples/basic/switches/main.go`: 単純な `switch` / `case` / `default` の変換サンプル
+- `samples/basic/condition_switches/main.go`: expression なし `switch` と条件付き `case` の変換サンプル
 - `samples/unsupported/control_flow/main.go`: 未対応の `range` を TODO 出力として確認するサンプル
 - `samples/unsupported/functions/main.go`: 構造体とメソッドが未対応として残ることを確認するサンプル
 
