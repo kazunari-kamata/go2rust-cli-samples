@@ -9,6 +9,7 @@ import (
 func TestSampleFilesExist(t *testing.T) {
 	paths := []string{
 		"../samples/basic/hello/main.go",
+		"../samples/basic/import_blocks/main.go",
 		"../samples/basic/variables/main.go",
 		"../samples/basic/return_value/main.go",
 		"../samples/basic/functions/main.go",
