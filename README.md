@@ -31,6 +31,7 @@ cargo run --manifest-path ../go2rust-cli/Cargo.toml -- convert \
 ## サンプル
 
 - `samples/basic/hello/main.go`: `package main`、`import "fmt"`、`func main()`、`fmt.Println`
+- `samples/basic/import_blocks/main.go`: 複数行の import ブロックの変換サンプル
 - `samples/basic/variables/main.go`: 初期値付き変数宣言、`bool`、`float64`、代入
 - `samples/basic/return_value/main.go`: 戻り値を持つ通常関数と `return x`
 - `samples/basic/functions/main.go`: 引数、戻り値、短変数宣言を持つ通常関数
