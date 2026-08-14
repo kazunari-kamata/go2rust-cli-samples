@@ -38,6 +38,8 @@ cargo run --manifest-path ../go2rust-cli/Cargo.toml -- convert \
 - `samples/basic/control_flow/main.go`: 単純な `if` / `else if` / `else` ブロックと `fmt.Print`
 - `samples/basic/early_return/main.go`: 値なし `return` を含む早期リターン
 - `samples/basic/loops/main.go`: 条件付き `for` と無限 `for` の変換サンプル
+- `samples/basic/three_clause_loops/main.go`: 初期化・条件・更新式を持つ 3句 `for` の変換サンプル
+- `samples/basic/three_clause_loops/expected.rs`: 3句 `for` サンプルの期待変換結果
 - `samples/basic/switches/main.go`: 単純な `switch` / `case` / `default` の変換サンプル
 - `samples/basic/condition_switches/main.go`: expression なし `switch` と条件付き `case` の変換サンプル
 - `samples/unsupported/control_flow/main.go`: 未対応の `range` を TODO 出力として確認するサンプル
@@ -50,6 +52,8 @@ Go toolchain がある環境では、サンプルが Go コードとして壊れ
 ```sh
 go test ./...
 ```
+
+`expected.rs` を持つサンプルは、`go2rust-cli` の CI で変換結果と完全一致比較されます。
 
 ## 関連リポジトリ
 
